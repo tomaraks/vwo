@@ -1,0 +1,25 @@
+{
+  "name": "vwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaraks/vwo.git"
+  },
+  "author": "Akshay Tomar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomaraks/vwo/issues"
+  },
+  "homepage": "https://github.com/tomaraks/vwo#readme",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
