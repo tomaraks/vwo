@@ -14,7 +14,7 @@ export class HypothesesPage {
         cy.get('ul.score-box li').eq(score).click();
     }
     enterLabel(label: string) {
-        cy.get('span .chosen-container-multi ul li.search-field input').eq(2).click({ force: true }).type(label).type('{enter}');
+        cy.get('span .chosen-container-multi ul li.search-field input').last().click({ force: true }).type(label).type('{enter}');
     }
     getCreateButton() {
         return cy.get('.modal-footer button span');
