@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-export class FreeTrialPage{
-    enterWorkEmail(workEmail: string){
+export class FreeTrialPage {
+    enterWorkEmail(workEmail: string) {
         cy.get('#page-v1-step1-email').type(workEmail);
     }
     getCreateFreeTrialButton() {

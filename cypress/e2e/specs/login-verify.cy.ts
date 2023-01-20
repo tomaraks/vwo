@@ -10,7 +10,7 @@ describe('Login and verification', () => {
     beforeEach(() => {
         cy.visit('https://app.vwo.com/#/login');
     })
-    it('Login and verify dashboard', () => {
+    it('Login and verification', () => {
         login.enterEmailAddress('akshaysayakki@yahoo.com');
         login.enterPassword('Akshay_tomar30');
         login.getSignInButton().click();
@@ -40,7 +40,7 @@ describe('Login and verification', () => {
             scores[i] = ele.text();
         });
 
-        for(let i = 1; i<scores.length; i++) {
+        for (let i = 1; i < scores.length; i++) {
             cy.wrap(scores[0]).should('be.gte', scores[i]);
         }
 
@@ -57,7 +57,7 @@ describe('Login and verification', () => {
         hypothesesPage.clearFilterByLabel();
 
         hypothesesPage.getAllCheckBoxes().each(($ele) => {
-            cy.wrap($ele).click({force:true});
+            cy.wrap($ele).click({ force: true });
         })
 
         hypothesesPage.getDelete().click();
