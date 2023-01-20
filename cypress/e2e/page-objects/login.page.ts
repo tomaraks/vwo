@@ -1,13 +1,16 @@
 /// <reference types="cypress" />
 
-export class LoginPage{
-   googleSearch(){
-   return cy.get('input[name="q"]').first();
-   }
-   googleSearchBtn(){
-    return cy.get('input[name="btnK"]').first();
+export class LoginPage {
+    getStartFreeTrial() {
+        return cy.get('#js-login-form .text-link');
     }
-    searchResults(){
-        return cy.get('h3').first();
+    enterEmailAddress(email: string) {
+        cy.get('#js-login-wrap #login-username').type(email);
     }
- }
+    enterPassword(password: string) {
+        cy.get('#js-login-wrap #login-password').type(password);
+    }
+    getSignInButton() {
+        return cy.get('#js-login-wrap #js-login-btn');
+    }
+}
